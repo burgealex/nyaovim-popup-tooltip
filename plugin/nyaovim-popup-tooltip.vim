@@ -10,7 +10,7 @@ augroup END
 
 if has('win32') || has('win64')
   function! s:is_absolute(path) abort
-    return a:path =~# '^[a-zA-Z]:[/\\]'
+    return a:path =~# '^[a-zA-Z]+:[/\\]'
   endfunction
   let s:sep = '\'
 else
